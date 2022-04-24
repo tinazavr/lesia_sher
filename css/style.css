@@ -12,20 +12,26 @@ body {
     margin: 0 auto;
     width: 960px;
 }
+ul{
+    padding: 0;
+    margin: 0;
+}
 ul li{
     list-style-type: none;
 }
 a{
     text-decoration: none;
+    line-height: 1.8em;
+    font-size: 16px;
 }
 p{
     font-size: 14px;
     line-height: 1.3em;;
 }
-/* HEADER */
 
+/* HEADER */
 .page-header{
-    background-color: rgb(240,113,56);
+    background: linear-gradient(0deg, rgba(240,133,56,1) 0%, rgba(247,205,71,1) 90%);
     padding: 30px 0;
 }
 .page-header h1, h2{
@@ -38,6 +44,8 @@ p{
     background-color: #222;
     border-color: #101010;
     min-height: 64px;
+    position: sticky;
+    top: 0;
 }
 .page-navigation li{
     float: left;
@@ -55,10 +63,83 @@ p{
     background-color: black;
 }
 
-/* ASIDE */
+/* SEARCH FORM */
+.search-form{
+    padding: 15px 0;
+    float: right;
+}
+.search-form input[type="text"]{
+    padding: 5px;
+    margin-right: 5px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    outline: none;
+    width: 240px;
+}
+.search-form input[type="submit"]{
+    padding: 5px 15px;
+    border: 2px solid lightgrey;
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+.search-form input[type="submit"]:hover,
+button:hover{
+    background-color: lightgrey;
+    border: 2px solid rgb(240,113,56);
+}
+
+/* MAIN SECTION: ASIDE */
 .page-aside{
     height: 600px;
     float: left;
     width: 250px;
-    margin-left: 64px;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+.page-aside a{
+    padding: 5px 20px;
+    color: black;
+}
+.page-aside a:visited{
+    color: black;
+}
+.page-aside a:active{
+    color: rgb(240,113,56);
+    font-size: 120%;
+} 
+.page-aside a:hover{
+    color: rgb(240,113,56);
+    font-size: 110%;
+}
+
+
+/* MAIN SECTION: MAIN */
+.main-content{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 600px;
+    overflow: scroll;
+}
+
+/* FOOTER */
+.footer{
+    background: linear-gradient(0deg, rgba(247,205,71,1) 0%, rgba(240,133,56,1) 83%);
+    color: white;
+    padding: 40px 0;
+    margin: 30px 0;
+    min-height: 24px;
+}
+.footer li{
+    float: left;
+    width: 100px;
+}
+.footer a{
+    display: block;
+    color:black;
+    font-weight: bold;
+    text-align: center
+}
+.footer li a:hover{
+    color: rgb(240,113,56);
+    background-color: black;
 }
