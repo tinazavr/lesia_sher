@@ -92,9 +92,12 @@ button:hover{
 .page-aside{
     height: 600px;
     float: left;
-    width: 250px;
+    width: 300px;
     margin-left: 100px;
     margin-top: 30px;
+}
+.page-aside div:first-child{
+    width: 100%;
 }
 .page-aside a{
     padding: 5px 20px;
@@ -103,15 +106,11 @@ button:hover{
 .page-aside a:visited{
     color: black;
 }
-.page-aside a:active{
-    color: rgb(240,113,56);
-    font-size: 120%;
-} 
+
 .page-aside a:hover{
     color: rgb(240,113,56);
     font-size: 110%;
 }
-
 
 /* MAIN SECTION: MAIN */
 .main-content{
@@ -119,6 +118,9 @@ button:hover{
     margin-bottom: 30px;
     height: 600px;
     overflow: scroll;
+}
+.main-content div:first-child h3{
+    margin-top: 0;
 }
 
 /* FOOTER */
