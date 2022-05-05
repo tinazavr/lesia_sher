@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-    font-family: Arial, San-Serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 100%;
 }
 .container {
@@ -53,7 +53,7 @@ p{
 }
 .page-navigation a{
     display: block;
-    color: #9d9d9d;
+    color: #c0bdbd;
     line-height: 4em;
     font-weight: bold;
     text-align: center
@@ -88,13 +88,22 @@ button:hover{
     border: 2px solid rgb(240,113,56);
 }
 
+/* MAIN SECTION: BOTH MAIN AND ASIDE */
+.main-plus-aside-box{
+    
+}
+
+
+
+
+
 /* MAIN SECTION: ASIDE */
 .page-aside{
-    height: 600px;
-    float: left;
     width: 300px;
     margin-left: 100px;
     margin-top: 30px;
+    position: sticky;
+    top: 94px;
 }
 .page-aside div:first-child{
     width: 100%;
@@ -113,14 +122,26 @@ button:hover{
 }
 
 /* MAIN SECTION: MAIN */
+main {
+    position: sticky;
+    top: 94px;
+}
 .main-content{
     margin-top: 30px;
     margin-bottom: 30px;
-    height: 600px;
-    overflow: scroll;
+  /*  overflow: scroll; */
 }
 .main-content div:first-child h3{
     margin-top: 0;
+}
+ul.red-cross-mark li span{
+    color: red;
+}
+
+
+ul.green-tick-mark li span{
+    color: green;
+
 }
 
 /* FOOTER */
